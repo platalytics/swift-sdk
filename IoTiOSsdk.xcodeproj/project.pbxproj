@@ -7,13 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293FB5621CD8B440005B8F9D /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FB5611CD8B440005B8F9D /* temp.swift */; };
 		29432E1D1CD8B148005F1D39 /* IoTiOSsdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 29432E1C1CD8B148005F1D39 /* IoTiOSsdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29B0EE5C1CDA1D62005DC438 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0EE5B1CDA1D62005DC438 /* Device.swift */; };
+		29B0EE5E1CDA1D73005DC438 /* RegistryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0EE5D1CDA1D73005DC438 /* RegistryManager.swift */; };
+		29B0EE611CDA1DC9005DC438 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0EE601CDA1DC9005DC438 /* Protocol.swift */; };
+		29B0EE631CDA1DD3005DC438 /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0EE621CDA1DD3005DC438 /* MQTT.swift */; };
+		29B0EE661CDA1E5F005DC438 /* IoTHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0EE651CDA1E5F005DC438 /* IoTHubClient.swift */; };
+		29FE4C391CE0C4AC00E58D50 /* Moscapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FE4C341CE0C48500E58D50 /* Moscapsule.framework */; };
+		29FE4C601CE2016000E58D50 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FE4C511CE2014D00E58D50 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		29FE4C331CE0C48500E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C2E1CE0C48400E58D50 /* Moscapsule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09CF6B131A21F78700A97383;
+			remoteInfo = Moscapsule;
+		};
+		29FE4C351CE0C48500E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C2E1CE0C48400E58D50 /* Moscapsule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09CF6B1E1A21F78700A97383;
+			remoteInfo = MoscapsuleTests;
+		};
+		29FE4C371CE0C49A00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C2E1CE0C48400E58D50 /* Moscapsule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CF6B121A21F78700A97383;
+			remoteInfo = Moscapsule;
+		};
+		29FE4C501CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		29FE4C521CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		29FE4C541CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		29FE4C561CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		29FE4C581CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		29FE4C5A1CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		29FE4C5C1CE2014D00E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		29FE4C5E1CE2015800E58D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		293FB5611CD8B440005B8F9D /* temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		29432E191CD8B148005F1D39 /* IoTiOSsdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IoTiOSsdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29432E1C1CD8B148005F1D39 /* IoTiOSsdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IoTiOSsdk.h; sourceTree = "<group>"; };
 		29432E1E1CD8B148005F1D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29B0EE5B1CDA1D62005DC438 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		29B0EE5D1CDA1D73005DC438 /* RegistryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistryManager.swift; sourceTree = "<group>"; };
+		29B0EE601CDA1DC9005DC438 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		29B0EE621CDA1DD3005DC438 /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
+		29B0EE651CDA1E5F005DC438 /* IoTHubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoTHubClient.swift; sourceTree = "<group>"; };
+		29FE4C2E1CE0C48400E58D50 /* Moscapsule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Moscapsule.xcodeproj; path = ../libs/Moscapsule/Moscapsule.xcodeproj; sourceTree = "<group>"; };
+		29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,15 +117,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FE4C601CE2016000E58D50 /* Alamofire.framework in Frameworks */,
+				29FE4C391CE0C4AC00E58D50 /* Moscapsule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		293FB5631CD8D99F005B8F9D /* com.platalytics.iotsdk.device */ = {
+			isa = PBXGroup;
+			children = (
+				29B0EE5B1CDA1D62005DC438 /* Device.swift */,
+				29B0EE5D1CDA1D73005DC438 /* RegistryManager.swift */,
+			);
+			name = com.platalytics.iotsdk.device;
+			sourceTree = "<group>";
+		};
 		29432E0F1CD8B148005F1D39 = {
 			isa = PBXGroup;
 			children = (
+				29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */,
+				29FE4C2E1CE0C48400E58D50 /* Moscapsule.xcodeproj */,
+				29B0EE641CDA1DDC005DC438 /* com.platalytics.iotsdk.iothub */,
+				29B0EE5F1CDA1D7E005DC438 /* com.platalytics.iotsdk.Protocols */,
+				293FB5631CD8D99F005B8F9D /* com.platalytics.iotsdk.device */,
 				29432E1B1CD8B148005F1D39 /* IoTiOSsdk */,
 				29432E1A1CD8B148005F1D39 /* Products */,
 			);
@@ -48,8 +160,49 @@
 			children = (
 				29432E1C1CD8B148005F1D39 /* IoTiOSsdk.h */,
 				29432E1E1CD8B148005F1D39 /* Info.plist */,
+				293FB5611CD8B440005B8F9D /* temp.swift */,
 			);
 			path = IoTiOSsdk;
+			sourceTree = "<group>";
+		};
+		29B0EE5F1CDA1D7E005DC438 /* com.platalytics.iotsdk.Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				29B0EE601CDA1DC9005DC438 /* Protocol.swift */,
+				29B0EE621CDA1DD3005DC438 /* MQTT.swift */,
+			);
+			name = com.platalytics.iotsdk.Protocols;
+			sourceTree = "<group>";
+		};
+		29B0EE641CDA1DDC005DC438 /* com.platalytics.iotsdk.iothub */ = {
+			isa = PBXGroup;
+			children = (
+				29B0EE651CDA1E5F005DC438 /* IoTHubClient.swift */,
+			);
+			name = com.platalytics.iotsdk.iothub;
+			sourceTree = "<group>";
+		};
+		29FE4C2F1CE0C48400E58D50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29FE4C341CE0C48500E58D50 /* Moscapsule.framework */,
+				29FE4C361CE0C48500E58D50 /* MoscapsuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29FE4C471CE2014C00E58D50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29FE4C511CE2014D00E58D50 /* Alamofire.framework */,
+				29FE4C531CE2014D00E58D50 /* Alamofire iOS Tests.xctest */,
+				29FE4C551CE2014D00E58D50 /* Alamofire.framework */,
+				29FE4C571CE2014D00E58D50 /* Alamofire OSX Tests.xctest */,
+				29FE4C591CE2014D00E58D50 /* Alamofire.framework */,
+				29FE4C5B1CE2014D00E58D50 /* Alamofire tvOS Tests.xctest */,
+				29FE4C5D1CE2014D00E58D50 /* Alamofire.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +231,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				29FE4C5F1CE2015800E58D50 /* PBXTargetDependency */,
+				29FE4C381CE0C49A00E58D50 /* PBXTargetDependency */,
 			);
 			name = IoTiOSsdk;
 			productName = IoTiOSsdk;
@@ -108,12 +263,88 @@
 			mainGroup = 29432E0F1CD8B148005F1D39;
 			productRefGroup = 29432E1A1CD8B148005F1D39 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 29FE4C471CE2014C00E58D50 /* Products */;
+					ProjectRef = 29FE4C461CE2014C00E58D50 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 29FE4C2F1CE0C48400E58D50 /* Products */;
+					ProjectRef = 29FE4C2E1CE0C48400E58D50 /* Moscapsule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				29432E181CD8B148005F1D39 /* IoTiOSsdk */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		29FE4C341CE0C48500E58D50 /* Moscapsule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Moscapsule.framework;
+			remoteRef = 29FE4C331CE0C48500E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C361CE0C48500E58D50 /* MoscapsuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MoscapsuleTests.xctest;
+			remoteRef = 29FE4C351CE0C48500E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C511CE2014D00E58D50 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 29FE4C501CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C531CE2014D00E58D50 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 29FE4C521CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C551CE2014D00E58D50 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 29FE4C541CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C571CE2014D00E58D50 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 29FE4C561CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C591CE2014D00E58D50 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 29FE4C581CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C5B1CE2014D00E58D50 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 29FE4C5A1CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		29FE4C5D1CE2014D00E58D50 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 29FE4C5C1CE2014D00E58D50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		29432E171CD8B148005F1D39 /* Resources */ = {
@@ -130,10 +361,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293FB5621CD8B440005B8F9D /* temp.swift in Sources */,
+				29B0EE5E1CDA1D73005DC438 /* RegistryManager.swift in Sources */,
+				29B0EE5C1CDA1D62005DC438 /* Device.swift in Sources */,
+				29B0EE661CDA1E5F005DC438 /* IoTHubClient.swift in Sources */,
+				29B0EE631CDA1DD3005DC438 /* MQTT.swift in Sources */,
+				29B0EE611CDA1DC9005DC438 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29FE4C381CE0C49A00E58D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moscapsule;
+			targetProxy = 29FE4C371CE0C49A00E58D50 /* PBXContainerItemProxy */;
+		};
+		29FE4C5F1CE2015800E58D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 29FE4C5E1CE2015800E58D50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		29432E1F1CD8B148005F1D39 /* Debug */ = {
@@ -174,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -217,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -230,6 +480,7 @@
 		29432E221CD8B148005F1D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +491,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.platalytics.ios.IoTiOSsdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		29432E231CD8B148005F1D39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -278,6 +531,7 @@
 				29432E231CD8B148005F1D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
